@@ -139,6 +139,8 @@ header{position:sticky;top:0;z-index:50;padding:12px 0;transition:.3s}
 .facts{display:flex;flex-wrap:wrap;gap:10px}
 .fact{display:flex;align-items:center;gap:8px;font-weight:700;color:var(--navy);font-size:.92rem;padding:9px 16px;border-radius:999px;background:rgba(255,255,255,.88);border:1px solid var(--line);box-shadow:var(--shadow-s)}
 .fact svg{width:20px;height:20px;color:var(--blue);flex:none}
+.fact .ft{display:flex;flex-direction:column;line-height:1.25}
+.fact .ft small{font-size:.72rem;font-weight:600;color:var(--muted)}
 
 .visual{position:relative;min-height:440px}
 .glass{background:var(--glass);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:2px solid var(--edge);box-shadow:var(--shadow);border-radius:var(--r)}
@@ -180,6 +182,7 @@ header{position:sticky;top:0;z-index:50;padding:12px 0;transition:.3s}
 .stat:last-child{border:0}
 .stat b{display:block;font-family:'Fraunces',serif;font-size:1.7rem;color:var(--blue-d)}
 .stat span{font-size:.9rem;color:var(--body);font-weight:600}
+.stat small{display:block;font-size:.74rem;font-weight:600;color:var(--muted);margin-top:2px}
 
 /* SECTIONS */
 section{padding:84px 0}
@@ -369,8 +372,8 @@ footer{padding:44px 0 90px;border-top:1px solid var(--line);margin-top:30px;back
           <a class="btn btn-o" href="#layanan">Lihat Layanan</a>
         </div>
         <div class="facts">
-          <div class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>Garansi 30 hari</div>
-          <div class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Mulai 3 hari</div>
+          <div class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>Bergaransi</div>
+          <div class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><span class="ft"><b>3–5 hari</b><small>Tergantung tingkat kesulitan</small></span></div>
           <div class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Konsultasi gratis</div>
         </div>
       </div>
@@ -413,8 +416,8 @@ footer{padding:44px 0 90px;border-top:1px solid var(--line);margin-top:30px;back
     <div class="wrap">
       <div class="glass strip-in rv">
         <div class="stat"><b>Web + APK</b><span>Dua layanan, satu tempat</span></div>
-        <div class="stat"><b>3–5 hari</b><span>Landing page selesai</span></div>
-        <div class="stat"><b>30 hari</b><span>Garansi perbaikan</span></div>
+        <div class="stat"><b>3–5 hari</b><span>Landing page selesai</span><small>Tergantung tingkat kesulitan</small></div>
+        <div class="stat"><b>Bergaransi</b><span>Perbaikan setelah serah terima</span></div>
         <div class="stat"><b>Gratis</b><span>Konsultasi &amp; penawaran</span></div>
       </div>
     </div>
@@ -479,7 +482,7 @@ footer{padding:44px 0 90px;border-top:1px solid var(--line);margin-top:30px;back
         <div class="glass li rv"><span class="n">1</span><div><h3>Ramah UMKM</h3><p>Harga jelas dan bisa disesuaikan budget. Tanpa biaya tersembunyi.</p></div></div>
         <div class="glass li rv"><span class="n">2</span><div><h3>Komunikasi mudah</h3><p>Pantau progres lewat WhatsApp, balasan cepat di jam operasional.</p></div></div>
         <div class="glass li rv"><span class="n">3</span><div><h3>Tampil bagus di HP</h3><p>Desain responsif karena mayoritas pelanggan membuka lewat ponsel.</p></div></div>
-        <div class="glass li rv"><span class="n">4</span><div><h3>Garansi perbaikan</h3><p>Ada garansi 30 hari setelah serah terima untuk perbaikan bug.</p></div></div>
+        <div class="glass li rv"><span class="n">4</span><div><h3>Garansi perbaikan</h3><p>Bergaransi: ada perbaikan bug setelah serah terima. Lama garansi menyesuaikan paket dan kesepakatan.</p></div></div>
       </div>
     </div>
   </section>
@@ -503,7 +506,7 @@ footer{padding:44px 0 90px;border-top:1px solid var(--line);margin-top:30px;back
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Desain responsif mobile</li>
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Form kontak / WhatsApp</li>
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>SEO dasar</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Pengerjaan 3–5 hari</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Pengerjaan 3–5 hari, tergantung kesulitan</li>
           </ul>
           <a class="btn btn-o" href="https://wa.me/6285704292385?text=Halo%20Anshor_Devp%2C%20saya%20tertarik%20paket%20Starter." target="_blank" rel="noopener">Pilih Starter</a>
         </div>
@@ -541,7 +544,7 @@ footer{padding:44px 0 90px;border-top:1px solid var(--line);margin-top:30px;back
           <a class="btn btn-o" href="https://wa.me/6285704292385?text=Halo%20Anshor_Devp%2C%20saya%20mau%20diskusi%20project%20custom%20(web%2FAPK)." target="_blank" rel="noopener">Diskusi Project</a>
         </div>
       </div>
-      <p class="note rv">*Harga bisa berbeda tergantung detail &amp; kebutuhan. Semua paket termasuk desain, setup hosting, dan 30 hari garansi perbaikan.</p>
+      <p class="note rv">*Harga bisa berbeda tergantung detail &amp; kebutuhan. Semua paket termasuk desain, setup hosting, dan garansi perbaikan. Lama garansi menyesuaikan paket dan kesepakatan.</p>
     </div>
   </section>
 
@@ -557,7 +560,7 @@ footer{padding:44px 0 90px;border-top:1px solid var(--line);margin-top:30px;back
         <div class="glass step rv"><div class="no">01</div><h3>Konsultasi</h3><p>Ceritakan kebutuhan, tujuan, dan budget project kamu. Gratis.</p></div>
         <div class="glass step rv"><div class="no">02</div><h3>Penawaran</h3><p>Saya kirim proposal harga dan timeline yang jelas, tanpa biaya tersembunyi.</p></div>
         <div class="glass step rv"><div class="no">03</div><h3>Desain &amp; Pengembangan</h3><p>Dikerjakan bertahap. Kamu bisa pantau dan beri masukan di tengah jalan.</p></div>
-        <div class="glass step rv"><div class="no">04</div><h3>Peluncuran &amp; Support</h3><p>Online atau siap dipasang, ada pengenalan singkat, plus garansi 30 hari.</p></div>
+        <div class="glass step rv"><div class="no">04</div><h3>Peluncuran &amp; Support</h3><p>Online atau siap dipasang, ada pengenalan singkat, plus garansi perbaikan.</p></div>
       </div>
     </div>
   </section>
@@ -573,7 +576,7 @@ footer{padding:44px 0 90px;border-top:1px solid var(--line);margin-top:30px;back
       <div class="faq">
         <details class="rv" open>
           <summary>Berapa lama proses pembuatannya?</summary>
-          <p>Landing page umumnya 3–5 hari, company profile atau toko online 1–2 minggu, sedangkan aplikasi/APK dan sistem custom bisa beberapa minggu tergantung fitur. Timeline pasti saya berikan di penawaran.</p>
+          <p>Landing page umumnya 3–5 hari (tergantung tingkat kesulitan), company profile atau toko online 1–2 minggu, sedangkan aplikasi/APK dan sistem custom bisa beberapa minggu tergantung fitur. Timeline pasti saya berikan di penawaran.</p>
         </details>
         <details class="rv">
           <summary>Apakah bisa dibuatkan aplikasi Android (APK)?</summary>
@@ -585,7 +588,7 @@ footer{padding:44px 0 90px;border-top:1px solid var(--line);margin-top:30px;back
         </details>
         <details class="rv">
           <summary>Apakah saya bisa minta revisi?</summary>
-          <p>Bisa. Revisi dibahas selama proses pengerjaan, dan ada garansi perbaikan bug selama 30 hari setelah serah terima.</p>
+          <p>Bisa. Revisi dibahas selama proses pengerjaan, dan ada garansi perbaikan bug setelah serah terima. Lama garansi menyesuaikan paket dan kesepakatan.</p>
         </details>
         <details class="rv">
           <summary>Apakah website saya bisa di-update sendiri?</summary>
