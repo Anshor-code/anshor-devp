@@ -195,6 +195,9 @@ section{padding:84px 0}
 .center .eyebrow{justify-content:center}
 
 .svc{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card.wide{grid-column:1/-1;display:flex;gap:18px;align-items:center}
+.card.wide .ico{flex:none;margin:0}
+.card.wide h3{margin-top:0}
 .card{position:relative;padding:28px;border-radius:var(--r);background:var(--glass);border:2px solid var(--edge);box-shadow:var(--shadow-s);transition:transform .25s, box-shadow .25s}
 .card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
 .ico{width:54px;height:54px;border-radius:16px;display:grid;place-items:center;color:#fff;margin-bottom:18px;
@@ -323,6 +326,7 @@ footer{padding:44px 0 90px;border-top:1px solid var(--line);margin-top:30px;back
 @media (max-width:560px){
   section{padding:62px 0}
   .svc,.steps,.contact{grid-template-columns:1fr}
+  .card.wide{flex-direction:column;align-items:flex-start}
   .cta-box{padding:42px 22px}
   .phone{width:220px}
   .stat b{font-size:1.25rem}
@@ -464,8 +468,16 @@ footer{padding:44px 0 90px;border-top:1px solid var(--line);margin-top:30px;back
           <h3>Sistem &amp; Aplikasi Web</h3>
           <p>Dashboard admin, manajemen data, booking, dan sistem custom sesuai cara kerja usahamu.</p>
         </article>
+        <article class="card wide rv">
+          <span class="tag">BARU</span>
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.4 2.4-2.6-.6-.6-2.6z"/></svg></div>
+          <div class="wide-t">
+            <h3>Perawatan Website</h3>
+            <p>Sudah punya website tapi jarang di-update, tampilannya tertinggal, atau tidak ada yang mengurus? Saya siap merawatnya: update konten, perbaikan bug, pembaruan tampilan, dan pengecekan rutin agar tetap aman dan lancar. Berlaku untuk website buatan siapa saja, asalkan akses pengelolaannya tersedia.</p>
+          </div>
+        </article>
       </div>
-      <p class="note rv" style="text-align:left;margin-top:22px">Butuh perawatan setelah online? Tersedia juga <b>maintenance &amp; update</b>: perbaikan bug, pembaruan konten, dan peningkatan performa.</p>
+      <p class="note rv" style="text-align:left;margin-top:22px">Perawatan juga tersedia untuk website yang saya buat: perbaikan bug, pembaruan konten, dan peningkatan performa.</p>
     </div>
   </section>
 
