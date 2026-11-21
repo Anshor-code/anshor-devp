@@ -213,6 +213,19 @@ section{padding:84px 0}
 .wcard p{color:var(--body);font-size:.94rem;margin:0}
 .wcard .wk-tags{margin:14px 0 18px}
 .wcard .btn{margin-top:auto;align-self:flex-start}
+.wcard.apk{grid-column:1/-1;flex-direction:row;align-items:center;gap:34px;padding:30px}
+.apk-ph{flex:none;width:210px;padding:12px;border-radius:32px;background:linear-gradient(160deg,#1e5eff,#0a2352);box-shadow:var(--shadow-s)}
+.apk-scr{border-radius:22px;background:#fff;padding:16px 14px 14px;color:var(--navy);text-align:center}
+.apk-scr small{display:block;font-size:.62rem;font-weight:700;letter-spacing:.08em;color:var(--muted)}
+.apk-scr b{display:block;font-family:'Fraunces',Georgia,serif;font-size:1.05rem;margin:2px 0 10px}
+.apk-line{display:flex;justify-content:space-between;gap:8px;padding:7px 0;border-top:1px dashed var(--line);font-size:.7rem;font-weight:600;color:var(--body)}
+.apk-tot{display:flex;justify-content:space-between;padding:9px 0 12px;border-top:2px solid var(--edge);font-size:.78rem;font-weight:800}
+.apk-btn{display:block;padding:9px;border-radius:999px;font-size:.7rem;font-weight:800;color:var(--navy);background:linear-gradient(135deg,#f6e7b8,var(--gold))}
+.apk-cap{display:block;margin-top:8px;text-align:center;font-size:.64rem;font-weight:600;color:#fff;opacity:.8}
+.apk-body{flex:1;min-width:0}
+.apk-body .wc-top{display:inline-flex}
+.apk-body .btn{margin-top:4px}
+@media(max-width:760px){.wcard.apk{flex-direction:column;align-items:stretch;gap:22px;padding:24px}.apk-ph{margin-inline:auto}}
 .wk-tags{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 20px}
 .wk-tags span{font-size:.78rem;font-weight:700;color:var(--blue-d);padding:6px 12px;border-radius:999px;background:rgba(255,255,255,.85);border:1px solid var(--line)}
 .wk-btns{display:flex;flex-wrap:wrap;gap:10px}
@@ -548,6 +561,26 @@ footer{padding:44px 0 90px;border-top:1px solid var(--line);margin-top:30px;back
           <p>Website utama pondok pesantren sebagai profil lembaga dan pintu masuk ke pendaftaran santri serta program donasi.</p>
           <div class="wk-tags"><span>Profil lembaga</span><span>Terhubung PSB &amp; donasi</span></div>
           <a class="btn btn-p" href="https://darussalammojogedang.com/" target="_blank" rel="noopener">Lihat Web</a>
+        </article>
+        <article class="wcard apk rv">
+          <div class="apk-ph" aria-hidden="true">
+            <div class="apk-scr">
+              <small>NOTA DONASI</small>
+              <b>LPDU Darussalam</b>
+              <div class="apk-line"><span>Program</span><span>Sedekah</span></div>
+              <div class="apk-line"><span>Donatur</span><span>Hamba Allah</span></div>
+              <div class="apk-tot"><span>Total</span><span>Rp •••.000</span></div>
+              <span class="apk-btn">CETAK NOTA</span>
+            </div>
+            <span class="apk-cap">Ilustrasi contoh tampilan</span>
+          </div>
+          <div class="apk-body">
+            <div class="wc-top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg><span>APLIKASI ANDROID (APK)</span></div>
+            <h3>Aplikasi Nota Donasi LPDU</h3>
+            <p>Aplikasi Android yang dipakai tim fundraising untuk mencatat donasi dan membuat nota donasi dengan cepat dari HP. Dibuat khusus untuk kebutuhan internal lembaga, sehingga alurnya sederhana dan mudah dipakai di lapangan.</p>
+            <div class="wk-tags"><span>Catat donasi</span><span>Nota donasi</span><span>Dipakai tim lapangan</span></div>
+            <a class="btn btn-p" href="https://wa.me/6285704292385?text=Halo%20Anshor_Devp%2C%20saya%20ingin%20lihat%20demo%20aplikasi%20Android%20Nota%20Donasi." target="_blank" rel="noopener">Minta demo via WhatsApp</a>
+          </div>
         </article>
       </div>
       <div style="text-align:center;margin-top:26px" class="rv"><a class="btn btn-o" href="https://wa.me/6285704292385?text=Halo%20Anshor_Devp%2C%20saya%20ingin%20website%20seperti%20proyek%20di%20portofolio." target="_blank" rel="noopener">Mau website seperti ini? Chat saya</a></div>
