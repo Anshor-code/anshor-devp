@@ -204,6 +204,15 @@ section{padding:84px 0}
 .wk-steps i:nth-child(-n+2){background:var(--gold)}
 .wk-row{display:flex;align-items:center;gap:10px;padding:10px 12px;margin-top:8px;border-radius:12px;background:rgba(255,255,255,.14);font-size:.82rem;font-weight:600}
 .wk-row svg{width:16px;height:16px;flex:none;color:#f6e7b8}
+.wk-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.wcard{display:flex;flex-direction:column;padding:26px;border-radius:var(--r);background:var(--glass);border:2px solid var(--edge);box-shadow:var(--shadow-s);transition:transform .25s, box-shadow .25s}
+.wcard:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.wc-top{display:flex;align-items:center;gap:10px;margin-bottom:16px;padding:14px 16px;border-radius:16px;color:#fff;font-size:.74rem;font-weight:700;letter-spacing:.06em;background:linear-gradient(160deg,#1e5eff,#0a2352)}
+.wc-top svg{width:22px;height:22px;flex:none;color:#f6e7b8}
+.wcard h3{font-size:1.15rem;color:var(--navy);margin:0 0 8px}
+.wcard p{color:var(--body);font-size:.94rem;margin:0}
+.wcard .wk-tags{margin:14px 0 18px}
+.wcard .btn{margin-top:auto;align-self:flex-start}
 .wk-tags{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 20px}
 .wk-tags span{font-size:.78rem;font-weight:700;color:var(--blue-d);padding:6px 12px;border-radius:999px;background:rgba(255,255,255,.85);border:1px solid var(--line)}
 .wk-btns{display:flex;flex-wrap:wrap;gap:10px}
@@ -306,6 +315,7 @@ footer{padding:44px 0 90px;border-top:1px solid var(--line);margin-top:30px;back
 
 @media (max-width:980px){
   .hero-grid,.why,.work{grid-template-columns:1fr}
+  .wk-grid{grid-template-columns:1fr;max-width:520px;margin-inline:auto}
   .visual{min-height:430px;max-width:520px;margin-inline:auto;width:100%}
   .svc{grid-template-columns:repeat(2,1fr)}
   .price{grid-template-columns:1fr;max-width:460px;margin-inline:auto}
@@ -514,29 +524,33 @@ footer{padding:44px 0 90px;border-top:1px solid var(--line);margin-top:30px;back
     <div class="wrap">
       <div class="sec-h rv">
         <div class="eyebrow">Karya</div>
-        <h2 class="serif">Proyek yang <span class="grad">Sudah Berjalan</span></h2>
-        <p>Contoh nyata website yang saya kerjakan dan sudah dipakai langsung.</p>
+        <h2 class="serif">Proyek yang Sudah Dikerjakan dan <span class="grad">Sudah Berjalan</span></h2>
+        <p>Contoh nyata website yang sudah saya kerjakan untuk satu lembaga pendidikan.</p>
       </div>
-      <article class="work rv">
-        <div class="wk-mock" aria-hidden="true">
-          <small>PSB ONLINE</small>
-          <b>Formulir Pendaftaran Santri</b>
-          <div class="wk-steps"><i></i><i></i><i></i><i></i></div>
-          <div class="wk-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg>Pengisian bertahap 4 langkah</div>
-          <div class="wk-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12"/></svg>Upload berkas dari HP</div>
-          <div class="wk-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L3 21l1.9-6.4A8 8 0 1 1 21 12z"/></svg>Notifikasi lewat WhatsApp</div>
-        </div>
-        <div>
-          <div class="pill" style="margin-bottom:12px"><i></i>WEBSITE LEMBAGA</div>
-          <h3 class="serif" style="font-size:1.6rem;color:var(--navy);margin:0 0 10px">Portal PSB Online PPTQ Darussalam Mojogedang</h3>
-          <p style="color:var(--body)">Website pendaftaran santri baru yang bisa diisi dari HP, lengkap dengan unggah berkas, brosur, serta cek status dan konfirmasi pembayaran lewat WhatsApp panitia.</p>
-          <div class="wk-tags"><span>Formulir online</span><span>Upload berkas</span><span>Cek status</span><span>Ramah HP</span></div>
-          <div class="wk-btns">
-            <a class="btn btn-p" href="https://psbdarussalam.my.id/" target="_blank" rel="noopener">Lihat Website</a>
-            <a class="btn btn-o" href="https://wa.me/6285704292385?text=Halo%20Anshor_Devp%2C%20saya%20ingin%20website%20seperti%20Portal%20PSB." target="_blank" rel="noopener">Mau yang seperti ini</a>
-          </div>
-        </div>
-      </article>
+      <div class="wk-grid">
+        <article class="wcard rv">
+          <div class="wc-top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg><span>PENDAFTARAN ONLINE</span></div>
+          <h3>Pendaftaran Online (PSB)</h3>
+          <p>Portal pendaftaran santri baru yang bisa diisi dari HP: formulir bertahap, unggah berkas, serta cek status dan konfirmasi pembayaran.</p>
+          <div class="wk-tags"><span>Formulir online</span><span>Upload berkas</span><span>Cek status</span></div>
+          <a class="btn btn-p" href="https://psb.darussalammojogedang.com/" target="_blank" rel="noopener">Lihat Web</a>
+        </article>
+        <article class="wcard rv">
+          <div class="wc-top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg><span>FUNDRAISING</span></div>
+          <h3>Web Fundraising</h3>
+          <p>Website penggalangan dana lembaga: program sedekah, progres dana terkumpul, dan infaq rutin dengan pengingat lewat WhatsApp.</p>
+          <div class="wk-tags"><span>Program donasi</span><span>Progres dana</span><span>Infaq rutin</span></div>
+          <a class="btn btn-p" href="https://lpdu.darussalammojogedang.com/" target="_blank" rel="noopener">Lihat Web</a>
+        </article>
+        <article class="wcard rv">
+          <div class="wc-top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg><span>WEB PONDOK</span></div>
+          <h3>Web Pondok</h3>
+          <p>Website utama pondok pesantren sebagai profil lembaga dan pintu masuk ke pendaftaran santri serta program donasi.</p>
+          <div class="wk-tags"><span>Profil lembaga</span><span>Terhubung PSB &amp; donasi</span></div>
+          <a class="btn btn-p" href="https://darussalammojogedang.com/" target="_blank" rel="noopener">Lihat Web</a>
+        </article>
+      </div>
+      <div style="text-align:center;margin-top:26px" class="rv"><a class="btn btn-o" href="https://wa.me/6285704292385?text=Halo%20Anshor_Devp%2C%20saya%20ingin%20website%20seperti%20proyek%20di%20portofolio." target="_blank" rel="noopener">Mau website seperti ini? Chat saya</a></div>
     </div>
   </section>
 
